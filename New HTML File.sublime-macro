@@ -1,0 +1,16 @@
+[
+	{ "command" : "new_file"},
+	{
+		"args" : {
+			"syntax": "Packages/HTML/HTML.tmLanguage"
+		},
+		"command": "set_file_type" 
+	},
+	{
+		"args":
+		{
+			"name": "Packages/HTML/html.sublime-snippet"
+		},
+		"command": "insert_snippet"
+	}
+]
