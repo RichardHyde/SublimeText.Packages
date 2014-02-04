@@ -1,0 +1,15 @@
+[
+	{ "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
+	{ "keys": ["super+]"], "command": "indent" },
+	{ "keys": ["super+["], "command": "unindent" },
+	{ "keys": ["super+\\", "h"], "command": "set_file_type", "args" : {"syntax": "Packages/HTML/HTML.tmLanguage"}},
+	{ "keys": ["super+\\", "j"], "command": "set_file_type", "args" : {"syntax": "Packages/JavaScript/JSON.tmLanguage"}},
+	{ "keys": ["super+\\", "x"], "command": "set_file_type", "args" : {"syntax": "Packages/XML/XML.tmLanguage"}},
+	{ "keys": ["super+\\", "p"], "command": "set_file_type", "args" : {"syntax": "Packages/Python/Python.tmLanguage"}},
+	{ "keys": ["super+\\", "o"], "command": "open_file", "args" : {"file" : "/Users/rhyde/Dropbox/Documents/omnifocus.txt"}},
+	{ "keys": ["super+\\", "g"], "command": "open_file", "args" : {"file" : "/Users/rhyde/Dropbox/Documents/groceries.txt"}},
+	{ "keys": ["super+\\", "b"], "command": "open_file", "args" : {"file" : "/Users/rhyde/Dropbox/Documents/butchers.txt"}},
+	{ "keys": ["super+\\", "\\"], "command": "open_file", "args" : {"file" : "/Users/rhyde/Dropbox/Documents/scratchpad.txt"}},
+	{ "keys": ["super+\\", "t"], "command": "total_file" }
+	{ "keys": ["super+\\", "u"], "command": "load_url" }
+]
