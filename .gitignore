@@ -1,3 +1,4 @@
 *.py[co]
 Default*.sublime-keymap
-Preferences.sublime-settings
+*.sublime-settings
+Package Control.*
