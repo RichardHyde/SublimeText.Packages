@@ -10,6 +10,6 @@
 	{ "keys": ["super+\\", "g"], "command": "open_file", "args" : {"file" : "/Users/rhyde/Dropbox/Documents/groceries.txt"}},
 	{ "keys": ["super+\\", "b"], "command": "open_file", "args" : {"file" : "/Users/rhyde/Dropbox/Documents/butchers.txt"}},
 	{ "keys": ["super+\\", "\\"], "command": "open_file", "args" : {"file" : "/Users/rhyde/Dropbox/Documents/scratchpad.txt"}},
-	{ "keys": ["super+\\", "t"], "command": "total_file" }
+	{ "keys": ["super+\\", "t"], "command": "total_file" },
 	{ "keys": ["super+\\", "u"], "command": "load_url" }
 ]
