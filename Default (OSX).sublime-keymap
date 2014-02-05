@@ -11,5 +11,7 @@
 	{ "keys": ["super+\\", "b"], "command": "open_file", "args" : {"file" : "/Users/rhyde/Dropbox/Documents/butchers.txt"}},
 	{ "keys": ["super+\\", "\\"], "command": "open_file", "args" : {"file" : "/Users/rhyde/Dropbox/Documents/scratchpad.txt"}},
 	{ "keys": ["super+\\", "t"], "command": "total_file" },
-	{ "keys": ["super+\\", "u"], "command": "load_url" }
+	{ "keys": ["super+\\", "u"], "command": "load_url" },
+	{ "keys": ["super+\\", "d"], "command": "post_to_day_one" }
+
 ]
