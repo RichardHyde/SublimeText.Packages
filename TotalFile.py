@@ -35,8 +35,8 @@ class TotalFileCommand(sublime_plugin.TextCommand):
 		cleaned.append(u"£{0:>9.2f} Total".format(total))
 		cleaned = '\n'.join(cleaned)
 
-		edit = self.view.begin_edit("")
+		#edit = self.view.begin_edit("")
 		self.view.erase(edit, region)
 		self.view.insert(edit, 0, cleaned)
-		self.view.end_edit(edit)
+		#self.view.end_edit(edit)
 
