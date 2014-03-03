@@ -16,20 +16,23 @@ class TotalFileCommand(sublime_plugin.TextCommand):
 				break
 
 			try:
-				m = re.match(ur"£\s*([0-9\.,]{1,9})\s(.*)", line)
+				m = re.match(u"£\s*([0-9\.,]{1,9})\s*(.*)", line, re.U)
 
-				if (m): 
+				if (m):
 					cost = float(m.group(1).strip(' '))
 					numbers.append(cost)
 					desc = m.group(2)
 
 					cleaned.append(u"£{0:>9.2f} {1}".format(cost, desc))
+				else:
+					cleaned.append(line)
 			except ValueError:
 				cleaned.append(line)
 
 		total = sum(numbers)
-		while cleaned[-1].strip() == '':
-			del cleaned[-1]
+		if (len(cleaned) > 0):
+			while cleaned[-1].strip() == '':
+				del cleaned[-1]
 
 		cleaned.append("")
 		cleaned.append(u"£{0:>9.2f} Total".format(total))
