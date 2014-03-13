@@ -1,12 +1,12 @@
 import sublime, sublime_plugin
-import urllib, webbrowser
+import urllib.request, webbrowser
 
 class PostToDayOneCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		selections = self.view.sel()
 		selection = self.view.substr(selections[0])
 
-		url = "dayone://post?entry=%s" %  urllib.quote(selection)
+		url = "dayone://post?entry=%s" %  urllib.request.quote(selection)
 
 		f = webbrowser.open(url)
 
