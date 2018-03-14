@@ -14,5 +14,7 @@
 	{ "keys": ["super+\\", "u"], "command": "load_url" },
 	{ "keys": ["super+\\", "d"], "command": "post_to_day_one" },
 	{ "keys": ["super+shift+c"], "command": "copy_append_to_clipboard"},
-	{ "keys": ["super+shift+x"], "command": "cut_append_to_clipboard"}
+	{ "keys": ["super+shift+x"], "command": "cut_append_to_clipboard"},
+	{ "keys": ["super+\\", "w"], "command": "get_webpage_source"},
+  	{ "keys": ["super+shift+-"], "command": "underline"}
 ]
