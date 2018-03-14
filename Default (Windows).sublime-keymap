@@ -22,5 +22,7 @@
 	{ "keys": ["super+\\", "t"], "command": "total_file" },
 	{ "keys": ["shift+super+\\", "h"], "command": "run_macro_file", "args": {"file": "Packages/User/New HTML File.sublime-macro"}},
 	{ "keys": ["ctrl+shift+c"], "command": "copy_append_to_clipboard" },
-	{ "keys": ["ctrl+shift+x"], "command": "cut_append_to_clipboard" }	
+	{ "keys": ["ctrl+shift+x"], "command": "cut_append_to_clipboard" },
+	{ "keys": ["super+\\", "w"], "command": "get_webpage_source"},
+	{ "keys": ["super+\\", "-"], "command": "underline"}
 ]
