@@ -4,6 +4,7 @@ import re
 
 class RemoveBlankLinesCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
+		lineEndings = self.view.line_endings()
 		docRegion = sublime.Region(0, self.view.size())
 
 		docText = self.view.substr(docRegion)
