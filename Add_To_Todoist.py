@@ -17,9 +17,18 @@ class AddToTodoistCommand(sublime_plugin.TextCommand):
             itemText = view.substr(i)
             indent = 1
 
-            while(itemText.startswith("  ")):
+            while itemText.startswith("  "):
               indent = indent + 1
               itemText = itemText[2:]
+
+            while itemText.startswith("\t"):
+              indent = indent + 1
+              itemText = itemText[1:]
+
+            if itemText.startswith("- "):
+              itemText = itemText[2:]
+            elif not itemText.endswith(":"):
+              itemText += ":"
 
             itemText = itemText.replace("\"", "\\\"")
 
