@@ -9,7 +9,12 @@ class AddToTodoistCommand(sublime_plugin.TextCommand):
     view = self.view
     results = ""
 
-    for region in self.view.sel():
+    selections = view.sel()
+
+    if len(selections) == 1 and selections[0].empty():
+      selections.add(sublime.Region(0, view.size()))
+
+    for region in selections:
         if not region.empty():
           items = view.split_by_newlines(region)
 
