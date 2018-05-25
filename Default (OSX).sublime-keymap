@@ -17,5 +17,5 @@
 	{ "keys": ["super+shift+x"], "command": "cut_append_to_clipboard"},
 	{ "keys": ["super+\\", "w"], "command": "get_webpage_source"},
   	{ "keys": ["super+shift+-"], "command": "underline"},
-	{ "keys": ["super+\\", "delete"], "command": "remove_blank_lines"}
+	{ "keys": ["super+\\", "backspace"], "command": "remove_blank_lines"}
 ]
