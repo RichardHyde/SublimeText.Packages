@@ -2,12 +2,22 @@ import http.client
 import sublime
 import sublime_plugin
 import urllib.parse
-import uuid
+import uuid, os
 
 class AddToTodoistCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     view = self.view
     results = ""
+
+    todoistTokenFile = sublime.packages_path() + "/User/Todoist_Token.txt"
+
+    if os.path.exists(todoistTokenFile):
+      token_file = open(todoistTokenFile)
+      self.apitoken = token_file.read()
+      token_file.close()
+    else:
+      sublime.error_message("Missing Todoist_Token.txt")
+      return
 
     selections = view.sel()
 
@@ -52,7 +62,7 @@ class AddToTodoistCommand(sublime_plugin.TextCommand):
       self.postToTodoist(results)
 
   def postToTodoist(self, tasks):
-    postData = { "token" : "3f70a4ae21ea2d05c8f0cf7689159700d7cbe60a", "commands" : "[" + tasks + "]" }
+    postData = { "token" : self.apitoken, "commands" : "[" + tasks + "]" }
     postHeaders = {
                     'Accept-Language': 'en-US,en;q=0.8',
                     'Origin': 'http://www.website.com',
