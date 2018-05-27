@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[Sesaon $1 Episode $2 $3: @defer($4) @autodone(true) @parallel(false)
+	- Download Sesaon $1 Episode $2 $3 @context(Online)
+	- Convert Season $1 Episode $2 $3 to MP4 @context(Mac)
+	- Watch Sesaon $1 Episode $2 $3 @context(TV)
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>bittorrenttask</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text.plain</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Bittorent TV Show Task Snippet</description>
+</snippet>
