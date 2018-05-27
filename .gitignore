@@ -1,3 +1,4 @@
 *.py[co]
 *.sublime-settings
 Package Control.*
+Todoist_Token.txt
