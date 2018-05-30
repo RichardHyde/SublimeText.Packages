@@ -2,3 +2,5 @@
 *.sublime-settings
 Package Control.*
 Todoist_Token.txt
+.DS_Store
+
